@@ -1,0 +1,189 @@
+body {
+  font-family: "Inter";
+  background-color: #FFFFFF;
+  font-size: 18px;
+}
+
+.header_container {
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 32px;
+  bottom: 32px;
+  left: 0;
+  z-index: 50;
+}
+header .header_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_menu li {
+  list-style: none;
+  margin-left: 80px;
+}
+
+.header_btn {
+  height: 48px;
+  width: 299px;
+  border-radius: 200px;
+  border: 1px #242424 solid;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+.header_btn:hover {
+  background-color: #0300DF;
+  color: #FFFFFF;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+a:hover {
+  color: #0300DF;
+}
+
+.about_container, .h1_container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Signate Grotesk";
+  src: url(fonts/signategrotesk-black.ttf);
+}
+.h1_container {
+  margin-top: 110px;
+  height: 550px;
+}
+
+.line {
+  height: 50px;
+  border-top: 1px #808080 solid;
+  border-radius: 200px;
+  width: 100%;
+}
+
+.h1_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.h1 {
+  font-size: 196px;
+  font-family: "Signate Grotesk";
+  text-transform: uppercase;
+  line-height: 100%;
+  color: #242424;
+}
+.h1 span {
+  color: #0300DF;
+}
+
+.circle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 138px;
+  height: 138px;
+  border-radius: 500px;
+  border: 1px solid #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+
+.line_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 172px;
+}
+
+.h1_txt {
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.h1_img {
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.h1_img img {
+  max-width: 493px;
+  max-height: 509px;
+}
+
+.about_container {
+  margin-top: 100px;
+}
+
+.about_txt {
+  font-size: 64px;
+  line-height: 100%;
+  width: 100%;
+}
+
+.about_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about_main .about_right_txt {
+  font-size: 24px;
+  line-height: 130%;
+  width: 700px;
+}
+
+.about_img button {
+  margin-top: 20px;
+  height: 48px;
+  width: 520px;
+  border-radius: 200px;
+  border: 1px #242424 solid;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+.about_img button:hover {
+  background-color: #0300DF;
+  color: #FFFFFF;
+  border: none;
+}

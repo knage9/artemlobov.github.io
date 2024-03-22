@@ -1,0 +1,55 @@
+$black: #242424;
+$blue: #0300DF;
+$white: #FFFFFF;
+$gray: #808080;
+
+.header_container{
+    max-width: 1600px;
+    margin: 0px auto;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 32px;
+    bottom: 32px;
+    left: 0;
+    z-index: 50;
+    .header_body{
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+        align-items: center;
+    }
+}
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    li{
+        list-style: none;
+        margin-left: 80px;
+    }
+}
+
+.header_btn{
+    height: 48px;
+    width: 299px;
+    border-radius: 200px;
+    border: 1px $black solid;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: $white;
+    &:hover{
+        background-color: $blue;
+        color: $white;
+        border: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+    &:hover{
+        color: $blue;
+    }
+}
