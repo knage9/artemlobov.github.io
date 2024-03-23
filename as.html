@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Моя страница</title>
-    <!-- Подключение jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        /* Стили для header и progress bar */
-        #header {
-            position: fixed;
+        #canvas {
+            position: absolute;
             top: 0;
-            width: 100%;
-            height: 50px;
-            background-color: #f8f9fa;
-            transition: top 0.3s ease-in-out;
-        }
-        #progress-bar {
-            position: fixed;
-            top: 0;
-            height: 4px;
-            background-color: black;
-            transition: width 0.3s ease-in-out;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <div id="header">Заголовок</div>
-    <div id="progress-bar"></div>
-    <!-- Остальной контент страницы -->
-    <div style="height: 2000px;"></div>
+    <canvas id="canvas"></canvas>
 
     <script>
-        $(document).ready(function() {
-            var lastScrollTop = 0;
-            var headerHeight = $('#header').outerHeight();
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
 
-            $(window).on('scroll', function() {
-                var st = $(this).scrollTop();
-                if (st > lastScrollTop && st > headerHeight) {
-                    // Скролл вниз
-                    $('#header').css('top', '-' + headerHeight + 'px');
-                } else {
-                    // Скролл вверх
-                    $('#header').css('top', '0');
-                }
-                lastScrollTop = st;
+        let mouseX = 0;
+        let mouseY = 0;
+        let isDrawing = false;
 
-                // Обновление progress bar
-                var winHeight = $(window).height();
-                var docHeight = $(document).height();
-                var progress = (st / (docHeight - winHeight)) * 100;
-                $('#progress-bar').css('width', progress + '%');
-            });
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('mousemove', function(e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+
+            if (isDrawing) {
+                ctx.lineTo(mouseX, mouseY);
+                ctx.stroke();
+            }
+        });
+
+        window.addEventListener('mousedown', function() {
+            isDrawing = true;
+            ctx.beginPath();
+            ctx.moveTo(mouseX, mouseY);
+        });
+
+        window.addEventListener('mouseup', function() {
+            isDrawing = false;
+
+            setTimeout(function() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }, 2000); // линия исчезает через 2 секунды
         });
     </script>
 </body>

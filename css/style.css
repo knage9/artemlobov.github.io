@@ -85,6 +85,18 @@ a:hover {
   color: #0300DF;
 }
 
+.circle_cursor {
+  position: absolute;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 @font-face {
   font-family: "Signate Grotesk";
   src: url(fonts/signategrotesk-black.ttf);
@@ -165,6 +177,32 @@ a:hover {
 .h1_img img {
   max-width: 493px;
   max-height: 509px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.h1_img {
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
 }
 
 .about_container {

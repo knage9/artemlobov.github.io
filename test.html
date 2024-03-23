@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            cursor: none;
+        }
+        .cursor {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: red;
+            mix-blend-mode: difference;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease-out;
+        }
+        .cursor::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: red;
+            opacity: 0.5;
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+        .cursor.expand::after {
+            transform: scale(2);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', function(e) {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;");
+            cursor.classList.add("expand");
+
+            setTimeout(function() {
+                cursor.classList.remove("expand");
+            }, 1000); // хвост исчезает через 0.5 секунды
+        });
+    </script>
+</body>
+</html>
