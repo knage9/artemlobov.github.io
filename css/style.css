@@ -12,10 +12,12 @@ body {
 header {
   position: fixed;
   width: 100%;
-  top: 32px;
-  bottom: 32px;
   left: 0;
+  top: 20px;
   z-index: 50;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .header_body {
   display: -webkit-box;
@@ -28,6 +30,23 @@ header .header_body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#header {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  height: 4px;
+  background-color: #0300DF;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  z-index: 100;
 }
 
 .header_menu {
@@ -66,17 +85,14 @@ a:hover {
   color: #0300DF;
 }
 
-.about_container, .h1_container {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
 @font-face {
   font-family: "Signate Grotesk";
   src: url(fonts/signategrotesk-black.ttf);
 }
 .h1_container {
-  margin-top: 110px;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 100px;
   height: 550px;
 }
 
@@ -152,13 +168,16 @@ a:hover {
 }
 
 .about_container {
-  margin-top: 100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 .about_txt {
   font-size: 64px;
   line-height: 100%;
   width: 100%;
+  text-indent: 350px;
 }
 
 .about_main {
@@ -169,9 +188,13 @@ a:hover {
 .about_main .about_right_txt {
   font-size: 24px;
   line-height: 130%;
-  width: 700px;
+  width: 900px;
+  margin-right: 200px;
 }
 
+.about_img {
+  display: block;
+}
 .about_img button {
   margin-top: 20px;
   height: 48px;
@@ -186,4 +209,154 @@ a:hover {
   background-color: #0300DF;
   color: #FFFFFF;
   border: none;
+}
+
+.portfolio_container {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.txt_name {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.txt_category {
+  font-size: 24px;
+  color: #808080;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.cards_img {
+  border-radius: 0;
+  -webkit-transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s ease;
+  cursor: pointer;
+}
+
+.cards_img:hover {
+  border-radius: 50px;
+}
+
+.card_0 {
+  margin-bottom: 50px;
+}
+
+.footer_container {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.h_footer {
+  font-size: 196px;
+  font-family: "Signate Grotesk";
+  text-transform: uppercase;
+  line-height: 100%;
+  color: #242424;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  background-color: red;
+}
+
+.footer_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0300DF;
+  color: #FFFFFF;
+  font-size: 128px;
+  border-radius: 200px;
+  height: 168px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 50px;
+  -webkit-transition: border-radius 0.3s ease;
+  transition: border-radius 0.3s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_btn:hover {
+  background-color: #FFFFFF;
+  color: #242424;
+  border: 1px solid #242424;
+  font-weight: bold;
+}
+
+.footer_line3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.telegram_btn, .behance_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  letter-spacing: -2%;
+  line-height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #242424;
+  border-radius: 200px;
+  text-transform: uppercase;
+  height: 168px;
+  width: 520px;
+}
+.telegram_btn:hover, .behance_btn:hover {
+  color: #0300DF;
+  border: 1px solid #0300DF;
+}
+
+.gif_footer {
+  display: none;
+}
+
+.email_btn:hover .gif_footer {
+  display: block;
+}
+.email_btn:hover .img_footer {
+  display: none;
 }

@@ -7,19 +7,33 @@ $gray: #808080;
     max-width: 1600px;
     margin: 0px auto;
 }
+
 header{
     position: fixed;
     width: 100%;
-    top: 32px;
-    bottom: 32px;
     left: 0;
+    top: 20px;
     z-index: 50;
+    align-items: center;
     .header_body{
         display: flex;
         justify-content: space-between;
         height: 48px;
         align-items: center;
     }
+}
+
+#header{
+    transition: transform 1s ease-in-out;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    height: 4px;
+    background-color: $blue;
+    transition: width 0.3s ease-in-out;
+    z-index: 100;
 }
 
 .header_menu{
