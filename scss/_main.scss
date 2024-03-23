@@ -234,14 +234,3 @@ $gray: #808080;
         border: 1px solid $blue;
     }
 }
-.gif_footer{
-    display: none;
-}
-.email_btn:hover{
-    .gif_footer{
-        display: block;
-    }
-    .img_footer{
-        display: none;
-    }
-}

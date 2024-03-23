@@ -387,14 +387,3 @@ a:hover {
   color: #0300DF;
   border: 1px solid #0300DF;
 }
-
-.gif_footer {
-  display: none;
-}
-
-.email_btn:hover .gif_footer {
-  display: block;
-}
-.email_btn:hover .img_footer {
-  display: none;
-}
