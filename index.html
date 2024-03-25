@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/logo.js"></script>
 </head>
 <body>
     <script src="js/cursor.js"></script>
@@ -20,9 +22,13 @@
         <div class="header_container" id="header">
             <div class="header_body">
                 <a href="#" class="header_logo">
-                    Artem Lobov
+                    <div id="greeting" onmouseover="changeText()" onmouseout="resetText()" class="logo_name">
+                        <span id="Name_">Artem Lobov</span>
+                        <span id="Skill" style="display: none;">Дизайн — это разёб</span>
+                    </div>
+                    <div class="logo_city">Moscow/Belgrade</div>
                 </a>
-                <a href="">
+                <a class="lang" href="">
                     Ru
                 </a>
                 <nav>
@@ -36,6 +42,11 @@
                         <li>
                             <a href="#">About</a>
                         </li>
+                        <div id="time" class="time">
+                            <div id="hours"></div>
+                            <div id="colon" class=" colon">:</div>
+                            <div id="minutes"></div>
+                        </div>
                     </ul>
                 </nav>
                 <button class="header_btn">Contacts</button>
@@ -93,7 +104,7 @@
                     <p class="txt_name">Domestiq</p>
                     <p class="txt_category">Identy, Website, UX/UI</p>
                     <a href="">
-                        <img class="cards_img" src="img/0.png" alt="">
+                        <img id="myImage" class="cards_img" src="img/0.png" alt="">
                     </a>
                 </div>
                 <div class="line1">
@@ -158,6 +169,7 @@
             <div class="footer_line3">
                 <a class="telegram_btn" href="">telegram</a>
                 <a class="email_btn" href="">
+                    <div class="email_btn_hover">knagh.forall@gmail.com</div>
                     <img src="img/email.png" alt="" class="img_footer">
                 </a>
                 <a class="behance_btn" href="">behance</a>

@@ -6,6 +6,9 @@ $gray: #808080;
 .header_container{
     max-width: 1600px;
     margin: 0px auto;
+    background-color: $black;
+    border-radius: 200px;
+    padding: 10px 20px;
 }
 
 header{
@@ -41,6 +44,7 @@ header{
     align-items: center;
     li{
         list-style: none;
+        font-size: 24px;
         margin-left: 80px;
     }
 }
@@ -59,11 +63,58 @@ header{
         border: none;
     }
 }
-
-a{
+.header_logo{
     text-decoration: none;
-    color: $black;
+    color: $white;
+}
+.logo_name{
+    font-size: 20px;
+    width: 200px;
+}
+
+.logo_city{
+    font-size: 14px;
+    color: $gray;
+}
+
+.lang{
+    text-decoration: none;
+    color: $white;
+    font-size: 24px;
     &:hover{
         color: $blue;
     }
+}
+
+li{
+    a{
+        text-decoration: none;
+        color: $white;
+        &:hover{
+            color: $blue;
+        }
+    }
+    
+}
+
+.time{
+    color: $white;
+    height: 48px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1px solid $gray;
+    padding: 0px 10px;
+    font-size: 18px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.colon {
+    animation: blink 1s infinite;
 }

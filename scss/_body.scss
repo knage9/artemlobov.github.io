@@ -8,3 +8,13 @@ body{
     background-color: $white;
     font-size: 18px;
 }
+
+::selection {
+    background: black;
+    color: white;
+}
+
+::-moz-selection {
+    background: black;
+    color: white;
+}
