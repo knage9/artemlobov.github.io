@@ -18,3 +18,8 @@ body{
     background: black;
     color: white;
 }
+
+&::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f;
+  }
+}  
