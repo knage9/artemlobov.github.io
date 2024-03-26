@@ -19,7 +19,11 @@ body{
     color: white;
 }
 
-&::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar{
+    width: 8px; 
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #0f0f0f;
   }
 }  
