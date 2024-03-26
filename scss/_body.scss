@@ -18,3 +18,25 @@ body{
     background: black;
     color: white;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+/* Устанавливаем свойства для всей полосы прокрутки */
+::-webkit-scrollbar {
+    width: 8px;
+    margin-right: 10px;
+}
+
+ /* Устанавливаем свойства для ползунка прокрутки */
+::-webkit-scrollbar-thumb {
+    background: $gray;
+    border-radius: 10px;
+    transition: overflow 2s ease-in-out;
+ }
+
+/* Устанавливаем свойства для ползунка прокрутки при наведении */
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}

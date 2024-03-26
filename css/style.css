@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Inter";
   background-color: #FFFFFF;
@@ -17,6 +18,29 @@ body {
 ::-moz-selection {
   background: black;
   color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Устанавливаем свойства для всей полосы прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+  margin-right: 10px;
+}
+
+/* Устанавливаем свойства для ползунка прокрутки */
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 10px;
+  -webkit-transition: overflow 2s ease-in-out;
+  transition: overflow 2s ease-in-out;
+}
+
+/* Устанавливаем свойства для ползунка прокрутки при наведении */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
 }
 
 .header_container {
@@ -103,7 +127,7 @@ header .header_body {
 
 .logo_name {
   font-size: 20px;
-  width: 200px;
+  width: 220px;
 }
 
 .logo_city {
