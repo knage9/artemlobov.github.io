@@ -44,7 +44,7 @@ body {
 }
 
 .header_container {
-  max-width: 1600px;
+  max-width: 1560px;
   margin: 0px auto;
   background-color: #242424;
   border-radius: 200px;
@@ -197,6 +197,11 @@ li a:hover {
           animation: blink 1s infinite;
 }
 
+.portfolio_container, .h1_container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .circle_cursor {
   position: absolute;
   z-index: 100;
@@ -214,8 +219,6 @@ li a:hover {
   src: url(fonts/signategrotesk-black.ttf);
 }
 .h1_container {
-  max-width: 1600px;
-  margin: 0 auto;
   margin-top: 100px;
   height: 550px;
 }
@@ -362,8 +365,6 @@ li a:hover {
 }
 
 .portfolio_container {
-  max-width: 1600px;
-  margin: 0 auto;
   margin-top: 200px;
 }
 
@@ -520,4 +521,12 @@ li a:hover {
 footer a {
   text-decoration: none;
   color: #242424;
+}
+
+.fade-in {
+  visibility: hidden;
+}
+
+.img_anim {
+  visibility: hidden;
 }

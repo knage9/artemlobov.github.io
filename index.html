@@ -14,10 +14,14 @@
     <script src="js/header.js"></script>
     <script src="js/time.js"></script>
     <script src="js/logo.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <script src="js/y-scroll.js"></script>
     <script src="js/cursor.js"></script>
+    <script src="js/txt_animation.js"></script>
+    <script src="js/img_animation.js"></script>
+    
     <div class="circle_cursor"></div>
     <header>
         <div class="header_container" id="header">
@@ -66,11 +70,11 @@
                         <div class="circle">
                             4 YEARS OF EXPERIENCE
                         </div>
-                        <div class="h1">
+                        <div class="h1 animate__animated animate__fadeIn animate__slow">
                             I’m a <span>ux/ui</span>
                         </div>
                     </div>
-                    <div class="h1">
+                    <div class="h1 animate__animated animate__fadeIn animate__slow">
                         designer
                     </div>
                 </div>
@@ -87,10 +91,10 @@
             </p>
             <div class="about_main">
                 <div class="about_img">
-                    <img src="img/img_1.png" alt="">
+                    <img class="img_anim" src="img/img_1.png" alt="">
                     <button>MORE ABOUT ME</button>
                 </div>
-                <div class="about_right_txt">
+                <div class="about_right_txt fade-in">
                     My priority in the last few years has been websites, 
                     web application design, UX research and analytics. 
                     I have experience with Aglie-methodologies, as well as in hypothesis 
@@ -105,7 +109,7 @@
                     <p class="txt_name">Domestiq</p>
                     <p class="txt_category">Identy, Website, UX/UI</p>
                     <a href="">
-                        <img id="myImage" class="cards_img" src="img/0.png" alt="">
+                        <img class="cards_img" src="img/0.png" alt="">
                     </a>
                 </div>
                 <div class="line1">
@@ -113,21 +117,21 @@
                         <p class="txt_name">Domestiq</p>
                         <p class="txt_category">Identy, Website, UX/UI</p>
                         <a href="">
-                            <img class="cards_img" src="img/1.png" alt="">
+                            <img class="cards_img img_anim" src="img/1.png" alt="">
                         </a>
                     </div>
                     <div class="card_2">
                         <p class="txt_name">Tourister Experts App</p>
                         <p class="txt_category">App, Product design, UX/UI</p>
                         <a href="">
-                            <img class="cards_img" src="img/2.png" alt="">
+                            <img class="cards_img img_anim" src="img/2.png" alt="">
                         </a>
                     </div>
                     <div class="card_3">
                         <p class="txt_name">Go travel</p>
                         <p class="txt_category">Identy, Website</p>
                         <a href="">
-                            <img class="cards_img" src="img/3.png" alt="">
+                            <img class="cards_img img_anim"  src="img/3.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -137,21 +141,21 @@
                         <p class="txt_name">Domestiq</p>
                         <p class="txt_category">Identy, Website, UX/UI</p>
                         <a href="">
-                            <img class="cards_img" src="img/4.png" alt="">
+                            <img class="cards_img img_anim" src="img/4.png" alt="">
                         </a>
                     </div>
                     <div class="card_2">
                         <p class="txt_name">Tourister Experts App</p>
                         <p class="txt_category">App, Product design, UX/UI</p>
                         <a href="">
-                            <img class="cards_img" src="img/5.png" alt="">
+                            <img class="cards_img img_anim" src="img/5.png" alt="">
                         </a>
                     </div>
                     <div class="card_3">
                         <p class="txt_name">Go travel</p>
                         <p class="txt_category">Identy, Website</p>
                         <a href="">
-                            <img class="cards_img" src="img/6.png" alt="">
+                            <img class="cards_img img_anim" src="img/6.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -161,7 +165,7 @@
 
     <footer>
         <div class="footer_container">
-            <div class="h_footer">
+            <div class="h_footer fade-in">
                 what are you waiting for?
             </div>
             <a href="" class="footer_btn">
