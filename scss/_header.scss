@@ -20,11 +20,14 @@ header{
     align-items: center;
     .header_body{
         display: flex;
+        position: relative;
         justify-content: space-between;
         height: 48px;
         align-items: center;
     }
 }
+
+
 
 #header{
     transition: transform 1s ease-in-out;
@@ -39,7 +42,7 @@ header{
     z-index: 100;
 }
 
-.header_menu{
+.header_list{
     display: flex;
     align-items: center;
     li{
@@ -118,3 +121,5 @@ li{
 .colon {
     animation: blink 1s infinite;
 }
+
+

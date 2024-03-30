@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/header.js"></script>
     <script src="js/time.js"></script>
@@ -21,7 +22,7 @@
     <script src="js/cursor.js"></script>
     <script src="js/txt_animation.js"></script>
     <script src="js/img_animation.js"></script>
-    
+    <!-- <script src="js/burger.js"></script> -->
     <div class="circle_cursor"></div>
     <header>
         <div class="header_container" id="header">
@@ -33,11 +34,14 @@
                     </div>
                     <div class="logo_city">Moscow/Belgrade</div>
                 </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
                 <a class="lang" href="">
                     Ru
                 </a>
-                <nav>
-                    <ul class="header_menu">
+                <nav class="header_menu">
+                    <ul class="header_list">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -91,7 +95,7 @@
             </p>
             <div class="about_main">
                 <div class="about_img">
-                    <img class="img_anim" src="img/img_1.png" alt="">
+                    <img class="my_img img_anim" src="img/img_1.png" alt="">
                     <button>MORE ABOUT ME</button>
                 </div>
                 <div class="about_right_txt fade-in">
@@ -109,53 +113,53 @@
                     <p class="txt_name">Domestiq</p>
                     <p class="txt_category">Identy, Website, UX/UI</p>
                     <a href="">
-                        <img class="cards_img" src="img/0.png" alt="">
+                        <img class="big_img" src="img/0.png" alt="">
                     </a>
                 </div>
                 <div class="line1">
-                    <div class="card_1">
+                    <div class="card">
                         <p class="txt_name">Domestiq</p>
                         <p class="txt_category">Identy, Website, UX/UI</p>
                         <a href="">
-                            <img class="cards_img img_anim" src="img/1.png" alt="">
+                            <img class="cards_img_small img_anim" src="img/1.png" alt="">
                         </a>
                     </div>
-                    <div class="card_2">
+                    <div class="card">
                         <p class="txt_name">Tourister Experts App</p>
                         <p class="txt_category">App, Product design, UX/UI</p>
                         <a href="">
-                            <img class="cards_img img_anim" src="img/2.png" alt="">
+                            <img class="cards_img_small  img_anim" src="img/2.png" alt="">
                         </a>
                     </div>
-                    <div class="card_3">
+                    <div class="card">
                         <p class="txt_name">Go travel</p>
                         <p class="txt_category">Identy, Website</p>
                         <a href="">
-                            <img class="cards_img img_anim"  src="img/3.png" alt="">
+                            <img class="cards_img_big img_anim"  src="img/3.png" alt="">
                         </a>
                     </div>
                 </div>
 
                 <div class="line2">
-                    <div class="card_1">
+                    <div class="card">
                         <p class="txt_name">Domestiq</p>
                         <p class="txt_category">Identy, Website, UX/UI</p>
                         <a href="">
-                            <img class="cards_img img_anim" src="img/4.png" alt="">
+                            <img class="cards_img_big img_anim" src="img/4.png" alt="">
                         </a>
                     </div>
-                    <div class="card_2">
+                    <div class="card">
                         <p class="txt_name">Tourister Experts App</p>
                         <p class="txt_category">App, Product design, UX/UI</p>
                         <a href="">
-                            <img class="cards_img img_anim" src="img/5.png" alt="">
+                            <img class="cards_img_small  img_anim" src="img/5.png" alt="">
                         </a>
                     </div>
-                    <div class="card_3">
+                    <div class="card">
                         <p class="txt_name">Go travel</p>
                         <p class="txt_category">Identy, Website</p>
                         <a href="">
-                            <img class="cards_img img_anim" src="img/6.png" alt="">
+                            <img class="cards_img_small  img_anim" src="img/6.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -173,13 +177,18 @@
             </a>
             <div class="footer_line3">
                 <a class="telegram_btn" href="">telegram</a>
-                <a class="email_btn" href="">
-                    <div class="email_btn_hover">knagh.forall@gmail.com</div>
-                    <img src="img/email.png" alt="" class="img_footer">
-                </a>
+                <a class="email_btn" href="">knagh.forall@gmail.com</a>
                 <a class="behance_btn" href="">behance</a>
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $(".header_burger").click(function(event){
+                $(".header_burger,.header_menu").toggleClass('active');
+                $("body").toggleClass("lock")
+            });
+        });
+    </script>
 </body>
 </html>
