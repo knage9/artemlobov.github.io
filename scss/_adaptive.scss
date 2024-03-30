@@ -72,7 +72,11 @@
     %container_1600px{
         max-width: 1000px;
     }
-
+    .header_list{
+        li{
+            margin-left: 20px;
+        }
+    }
     .txt_name{
         font-size: 24px;
     }
@@ -150,6 +154,17 @@
 @media (max-width: 1000px){
     %container_1600px{
         max-width: 850px;
+    }
+    .time{
+        margin-left: 40px;
+    }
+    .header_list{
+        li{
+            font-size: 18px;
+        }
+    }
+    .header_btn{
+        width: 180px;
     }
     .h1_img{
         position: relative;

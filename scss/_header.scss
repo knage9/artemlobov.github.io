@@ -3,31 +3,53 @@ $blue: #0300DF;
 $white: #FFFFFF;
 $gray: #808080;
 
+  
 .header_container{
-    max-width: 1560px;
+    max-width: 1600px;
     margin: 0px auto;
+    padding: 10px 20px;
     background-color: $black;
     border-radius: 200px;
-    padding: 10px 20px;
 }
 
 header{
     position: fixed;
     width: 100%;
     left: 0;
-    top: 20px;
+    top: 0;
     z-index: 50;
-    align-items: center;
-    .header_body{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        height: 48px;
-        align-items: center;
-    }
 }
 
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
 
+.header_body{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 48px;
+    align-items: center;
+}
+
+.header_list{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    li{
+        list-style: none;
+        font-size: 24px;
+        margin-left: 80px;
+    }
+}
 
 #header{
     transition: transform 1s ease-in-out;
@@ -40,16 +62,6 @@ header{
     background-color: $blue;
     transition: width 0.3s ease-in-out;
     z-index: 100;
-}
-
-.header_list{
-    display: flex;
-    align-items: center;
-    li{
-        list-style: none;
-        font-size: 24px;
-        margin-left: 80px;
-    }
 }
 
 .header_btn{
@@ -69,6 +81,8 @@ header{
 .header_logo{
     text-decoration: none;
     color: $white;
+    position: relative;
+    z-index: 3;
 }
 .logo_name{
     font-size: 20px;
@@ -111,6 +125,7 @@ li{
     margin-left: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 @keyframes blink {
     0% {opacity: 1;}
@@ -121,5 +136,99 @@ li{
 .colon {
     animation: blink 1s infinite;
 }
+
+.header_burger{
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    header::before{
+        background-color: $black;
+        border-radius: 200px;
+    }
+    .header_burger{
+        position: relative;
+        z-index: 3;
+        display: block;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .header_burger span,
+    .header_burger::before,
+    .header_burger::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: $white;
+    }
+    .header_burger::before,
+    .header_burger::after{
+        content: "";
+    }
+    .header_burger::before{
+        top: 0;
+    }
+    .header_burger::after{
+        bottom: 0;
+    }
+    .header_burger span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    body.lock{
+        overflow: hidden;
+    }
+    .header_burger.active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+    .header_burger.active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .header_burger.active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    .header_menu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        padding: 100px 0px 0px 0px;
+        right: -100%;
+        transition: right 1s ease-in-out;
+    }
+    .header_menu.active{
+        right: 0;
+    }
+    .header_list{
+        display: block;
+        align-items: center;
+        padding: 0px 20px;
+        margin: 0px;
+        li{
+            margin-left: 0px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    }
+    .time{
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0px;
+        height: 60px;
+    }
+    .header_btn{
+        height: 60px;
+        width: 100%;
+    }
+}
+
 
 
