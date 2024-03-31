@@ -62,7 +62,7 @@ body {
 
 @font-face {
   font-family: "Signate Grotesk";
-  src: url(fonts/signategrotesk-black.ttf);
+  src: url(/fonts/signategrotesk-black.ttf);
 }
 .h1_container {
   margin-top: 100px;
@@ -605,6 +605,9 @@ footer a {
     display: block;
     margin-top: 0px;
   }
+  .footer_line3 a {
+    margin-top: 10px;
+  }
   .about_main .about_right_txt {
     font-size: 18px;
     margin-left: 20px;
@@ -678,7 +681,7 @@ footer a {
     font-size: 76px;
   }
   .h1_img img {
-    max-width: 250px;
+    max-width: 300px;
   }
   .h1_container {
     height: 360px;
@@ -702,8 +705,14 @@ footer a {
   .footer_container {
     margin-top: 70px;
   }
+  .txt_name {
+    font-size: 20px;
+  }
+  .txt_category {
+    font-size: 20px;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 359px) {
   .h1 {
     font-size: 64px;
   }
@@ -725,6 +734,12 @@ footer a {
     font-size: 26px;
     text-indent: 50px;
   }
+  .txt_name {
+    font-size: 18px;
+  }
+  .txt_category {
+    font-size: 18px;
+  }
 }
 .header_container {
   max-width: 1600px;
@@ -738,7 +753,7 @@ header {
   position: fixed;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 20px;
   z-index: 50;
 }
 
@@ -1021,5 +1036,11 @@ li a:hover {
   .header_btn {
     height: 60px;
     width: 100%;
+  }
+  .circle_cursor {
+    display: none;
+  }
+  header {
+    top: 0;
   }
 }
