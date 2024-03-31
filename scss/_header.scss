@@ -20,16 +20,6 @@ header{
     z-index: 50;
 }
 
-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
 .header_body{
     display: flex;
     position: relative;
@@ -140,13 +130,58 @@ li{
 .header_burger{
     display: none;
 }
+@media (max-width: 1200px){
+    .header_list{
+        li{
+            margin-left: 30px;
+        }
+    }
+}
 
+@media (max-width: 1000px){
+    .time{
+        margin-left: 30px;
+    }
+    .header_list{
+        li{
+            font-size: 18px;
+        }
+    }
+    .header_btn{
+        width: 180px;
+    }
+    .header_list{
+        li{
+            margin-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 815px){
+    .time{
+        margin-left: 30px;
+    }
+    .header_list{
+        li{
+            font-size: 18px;
+        }
+    }
+    .header_btn{
+        width: 180px;
+    }
+    .header_list{
+        li{
+            margin-left: 30px;
+        }
+    }
+    .header_btn{
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
 
 @media (max-width: 767px) {
-    header::before{
-        background-color: $black;
-        border-radius: 200px;
-    }
+    
     .header_burger{
         position: relative;
         z-index: 3;
@@ -197,11 +232,11 @@ li{
         position: fixed;
         top: 0;
         width: 100%;
-        height: 100%;
         background-color: $black;
         padding: 100px 0px 0px 0px;
         right: -100%;
         transition: right 1s ease-in-out;
+        height: 10000%;
     }
     .header_menu.active{
         right: 0;
@@ -213,8 +248,8 @@ li{
         margin: 0px;
         li{
             margin-left: 0px;
-            margin-bottom: 20px;
-            font-size: 24px;
+            margin-bottom: 40px;
+            font-size: 48px;
         }
     }
     .time{
@@ -228,6 +263,7 @@ li{
         height: 60px;
         width: 100%;
     }
+
 }
 
 

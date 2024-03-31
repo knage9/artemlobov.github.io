@@ -72,11 +72,6 @@
     %container_1600px{
         max-width: 1000px;
     }
-    .header_list{
-        li{
-            margin-left: 20px;
-        }
-    }
     .txt_name{
         font-size: 24px;
     }
@@ -155,17 +150,6 @@
     %container_1600px{
         max-width: 850px;
     }
-    .time{
-        margin-left: 40px;
-    }
-    .header_list{
-        li{
-            font-size: 18px;
-        }
-    }
-    .header_btn{
-        width: 180px;
-    }
     .h1_img{
         position: relative;
         margin: 0 auto;
@@ -231,11 +215,12 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .footer_btn{
         font-size: 68px;
         height: 120px;
     }
+    
     .h_footer{
         font-size: 76px;
     }
