@@ -62,7 +62,7 @@ body {
 
 @font-face {
   font-family: "Signate Grotesk";
-  src: url(/fonts/signategrotesk-black.ttf);
+  src: url(../fonts/signategrotesk-black.ttf);
 }
 .h1_container {
   margin-top: 150px;
@@ -749,6 +749,7 @@ footer a {
   padding: 10px 20px;
   background-color: #242424;
   border-radius: 200px;
+  max-width: 1600px;
 }
 
 header {
