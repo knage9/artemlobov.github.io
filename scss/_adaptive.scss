@@ -313,7 +313,7 @@
     }
     .h1_img{
         img{
-            max-width: 300px;
+            max-width: 250px;
         }
     }
     .h1_container{
@@ -349,6 +349,11 @@
 }
 
 @media (max-width: 359px){
+    .h1_img{
+        img{
+            width: 220px;
+        }
+    }
     .h1{
         font-size: 64px;
     }

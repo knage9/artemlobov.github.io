@@ -65,7 +65,7 @@ body {
   src: url(/fonts/signategrotesk-black.ttf);
 }
 .h1_container {
-  margin-top: 100px;
+  margin-top: 150px;
   height: 550px;
 }
 
@@ -681,7 +681,7 @@ footer a {
     font-size: 76px;
   }
   .h1_img img {
-    max-width: 300px;
+    max-width: 250px;
   }
   .h1_container {
     height: 360px;
@@ -713,6 +713,9 @@ footer a {
   }
 }
 @media (max-width: 359px) {
+  .h1_img img {
+    width: 220px;
+  }
   .h1 {
     font-size: 64px;
   }
@@ -742,7 +745,6 @@ footer a {
   }
 }
 .header_container {
-  max-width: 1600px;
   margin: 0px auto;
   padding: 10px 20px;
   background-color: #242424;
@@ -1023,8 +1025,8 @@ li a:hover {
   }
   .header_list li {
     margin-left: 0px;
-    margin-bottom: 40px;
-    font-size: 48px;
+    margin-bottom: 20px;
+    font-size: 36px;
   }
   .time {
     margin-left: 0px;
@@ -1036,9 +1038,6 @@ li a:hover {
   .header_btn {
     height: 60px;
     width: 100%;
-  }
-  .circle_cursor {
-    display: none;
   }
   header {
     top: 0;
