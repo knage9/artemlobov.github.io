@@ -101,7 +101,7 @@ p {
 }
 
 .panel {
-  width: 600px;
+  max-width: 600px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -151,8 +151,8 @@ p {
 }
 
 .karaoke span {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #808080), color-stop(50%, #242424)) 0 0/220% 100%;
-  background: linear-gradient(to right, #808080 50%, #242424 50%) 0 0/220% 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #808080), color-stop(50%, #242424)) 0 0/250% 100%;
+  background: linear-gradient(to right, #808080 50%, #242424 50%) 0 0/250% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   box-decoration-break: slice;
