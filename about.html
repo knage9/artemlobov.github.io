@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- <script src="js/scroll.js"></script> -->
+    <script src="js/time.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <script src="js/cursor.js"></script>
+    <script src="js/txt_animation.js"></script>
+    <script src="js/img_animation.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/marquee.js"></script>
+    <div class="circle_cursor"></div>
+    
+    <header>
+        <div class="header_container" id="header">
+            <div class="header_body">
+                <a href="#" class="header_logo">
+                    <div id="greeting" onmouseover="changeText()" onmouseout="resetText()" class="logo_name">
+                        <span id="Name_">Artem Lobov</span>
+                        <span id="Skill" style="display: none;">Дизайн — это разъёб</span>
+                    </div>
+                    <div class="logo_city">Moscow/Belgrade</div>
+                </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Works</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <div id="time" class="time">
+                            <div id="hours"></div>
+                            <div id="colon" class=" colon">:</div>
+                            <div id="minutes"></div>
+                        </div>
+                        <button class="header_btn">Contacts</button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="progress-bar">
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="marquee">
+            <span>Artem Lobov  </span> 
+            <span><img src="img/Animation - 1712148527661.gif" alt=""></span>
+            <span>  UX/UI Designer</span>
+            <span><img src="img/Animation - 1712148527661.gif" alt=""></span>
+        </div>
+        <div class="txt2_container">
+            <div class="txt1_title fade-in">
+                Vision
+            </div>
+            <div class="txt1_content">
+                <div class="txt1_left">
+                    <div class="txt1_subtitle fade-in">
+                        <p>
+                            <span>Solving problems and</span> creating new visual languages
+                             is my favorite part of the job.
+                        </p>
+                    </div>
+                </div>
+                <div class="txt1_right">
+                    <p class="fade-in">My main focus is designing large scale web projects, 
+                        design languages and tools that lots of people will use for 
+                        a very long time.</p>
+
+                    <p class="fade-in">I am an advocate for a proper user experience, 
+                        structured design and extremely detailed execution.
+                        When designing experiences,
+                        I imagine a physical building where everything makes 
+                        perfect sense and where some people 
+                        will spend their lives.</p>
+                </div>
+            </div>
+        </div>
+        <div class="myimg_container img_anim">
+            <img src="img/myimg_1.jpg" alt="">
+        </div>
+        <div class="txtopen_container">
+            <div class="karaoke">
+                <span>A UX/UI designer, 
+                specializing in Websites, mobile app design, UX research 
+                and analytics. Frontend developer 
+                <br>
+                <br>
+                <img class="cat_1 img_anim" src="img/Animation - 1712148527661 (1).gif" alt="">
+                I'm a seasoned creative with a mission 
+                to make the digital space of the world
+                a more intuitive and interesting place by using personality
+                <br><br> 
+                Ready for work on the client side anywhere in the world. 
+                <br><br> 
+                <a href=""> <img class="cat_2 img_anim" src="img/Animation - 1712148989611.gif" alt=""> 
+                    Currently available for a new projects.</a></span>
+            </div>
+        </div>
+                <div class="acardion_container">
+            <div class="acardion_content">
+                <video id="myVideo" src="img/Cat.mp4" autoplay loop muted></video>
+                <div class="right">
+                    <button class="accordion">Professional Skills</button>
+                    <div class="panel">
+                        <ul>
+                            <li>Figma, Adobe</li>
+                            <li>Front-end (website development)</li>
+                            <li>Apple/Google material design</li>
+                            <li>Typography and composition</li>
+                            <li>CJM/UJM</li>
+                            <li>Web analytics, usability testing</li>
+                            <li>User flow</li>
+                            <li>Agile methodology, design thinking</li>
+                            <li>Qualitative, quantitative research</li>
+                            <li>Customer Interview</li>
+                        </ul>
+                    </div>
+            
+                    <button class="accordion">Personal Qualities</button>
+                    <div class="panel">
+                        <ul>
+                            <li>Ability to work in a team</li>
+                            <li>Ability to work with large volumes of data</li>
+                            <li>Defending and justifying one's decisions</li>
+                            <li>Researching and verifying design solutions</li>
+                            <li>Continuous improvement of skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spotify_container">
+            <div class="spotify_content">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7K432E3vqrHodMiq5k2sbV?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <a href="" class="footer_btn">
+                contact me
+            </a>
+            <div class="footer_line3">
+                <a class="telegram_btn" href="">telegram</a>
+                <a class="email_btn" href="">knagh.forall@gmail.com</a>
+                <a class="behance_btn" href="">behance</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/video.js"></script>
+    <script src="js/txtopen.js"></script>
+    <script src="js/acardion.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
