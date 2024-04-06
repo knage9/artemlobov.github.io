@@ -125,7 +125,7 @@ p{
         height: auto;
     }
     .right{
-        max-width: 575px;
+        width: 575px
     }
     li{
         font-size: 21px;
@@ -149,6 +149,10 @@ p{
 
 .karaoke{
     font-size: 40px;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Стандартный синтаксис */
 }
 .karaoke span {
     background: linear-gradient(to right,$gray 50%, $black 50%) 0 0 / 250% 100%;
@@ -257,6 +261,7 @@ p{
         }
         .right{
             max-width: 100%;
+            width: 100%;
         }
         li{
             font-size: 21px;
