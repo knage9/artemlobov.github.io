@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .portfolio_container, .about_container, .h1_container {
   max-width: 1600px;
   margin: 0 auto;
@@ -812,10 +816,22 @@ header {
   height: 48px;
   width: 299px;
   border-radius: 200px;
-  border: 1px #242424 solid;
   font-size: 18px;
   text-transform: uppercase;
   background-color: #FFFFFF;
+  color: #242424;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header_btn:hover {
   background-color: #0300DF;

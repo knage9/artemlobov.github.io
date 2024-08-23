@@ -3,6 +3,10 @@ $blue: #0300DF;
 $white: #FFFFFF;
 $gray: #808080;
 
+html {
+    scroll-behavior: smooth;
+}
+
 %container_1600px{
     max-width: 1600px;
     margin: 0 auto;
