@@ -237,7 +237,11 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
+  margin-top: 50px;
 }
 
 .txt_name {
@@ -288,6 +292,34 @@ html {
 .big_img {
   max-width: 100%;
   height: auto;
+}
+
+.container_category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 385px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container_category .txt_category {
+  text-transform: uppercase;
+  margin-right: 10px;
+  border: 1px solid #808080;
+  border-radius: 100px;
+  padding: 5px 20px;
+  color: #242424;
+  font-size: 20px;
+}
+.container_category .txt_category:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.container_category_big {
+  max-width: 800px;
 }
 
 .footer_container {
@@ -412,6 +444,15 @@ footer a {
   .email_btn {
     font-size: 24px;
   }
+  .container_category {
+    max-width: 315px;
+  }
+  .container_category .txt_category {
+    font-size: 18px;
+  }
+  .container_category_big {
+    max-width: 800px;
+  }
 }
 @media (max-width: 1400px) {
   .h1_container, .about_container, .portfolio_container {
@@ -452,6 +493,15 @@ footer a {
   }
   .h_footer {
     font-size: 160px;
+  }
+  .container_category {
+    max-width: 275px;
+  }
+  .container_category .txt_category {
+    font-size: 16px;
+  }
+  .container_category_big {
+    max-width: 800px;
   }
 }
 @media (max-width: 1200px) {
@@ -520,6 +570,15 @@ footer a {
   .footer_line3 {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+  .container_category {
+    max-width: 385px;
+  }
+  .container_category .txt_category {
+    font-size: 20px;
+  }
+  .container_category_big {
+    max-width: 800px;
   }
 }
 @media (max-width: 1000px) {
@@ -632,6 +691,9 @@ footer a {
     font-size: 18px;
     margin-left: 10px;
   }
+  .container_category_big {
+    max-width: 500px;
+  }
 }
 @media (max-width: 540px) {
   .h1 {
@@ -714,6 +776,15 @@ footer a {
   }
   .txt_category {
     font-size: 20px;
+  }
+  .container_category {
+    max-width: 320px;
+  }
+  .container_category .txt_category {
+    font-size: 18px;
+  }
+  .container_category_big {
+    max-width: 320px;
   }
 }
 @media (max-width: 359px) {
